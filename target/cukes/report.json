@@ -1,0 +1,119 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-02-19T08:08:23.994Z",
+        "line": 21,
+        "name": "login with valid credentials",
+        "description": "",
+        "id": "ignitho-portal;login-with-valid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 125789028600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user launches the ignitho URL",
+            "match": {
+              "location": "IgnithoPage.user_launches_the_ignitho_URL()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 17769100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the user validates the home page",
+            "match": {
+              "location": "IgnithoPage.the_user_validates_the_home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 28431627600,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user clicks inquiry button",
+            "match": {
+              "location": "IgnithoPage.user_clicks_inquiry_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5872700,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the user validates the inquiry page",
+            "match": {
+              "location": "IgnithoPage.the_user_validates_the_inquiry_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3299872800,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user enter \"Testing\",\"Sudharsani\",\"ignitho\" and \"sudharsani.r@ignitho.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Testing\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Sudharsani\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"ignitho\"",
+                  "offset": 34
+                },
+                {
+                  "val": "\"sudharsani.r@ignitho.com\"",
+                  "offset": 48
+                }
+              ],
+              "location": "IgnithoPage.user_enter_and(String,String,String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          },
+          {
+            "name": "@login"
+          }
+        ]
+      }
+    ],
+    "name": "Ignitho Portal",
+    "description": "",
+    "id": "ignitho-portal",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/sample.feature",
+    "tags": [
+      {
+        "name": "@sanity",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="157.575494">
+<testcase classname="Ignitho Portal" name="login with valid credentials" time="157.575494">
+<system-out><![CDATA[Given user launches the ignitho URL.........................................passed
+Then the user validates the home page.......................................passed
+When user clicks inquiry button.............................................passed
+Then the user validates the inquiry page....................................passed
+And user enter "Testing","Sudharsani","ignitho" and "sudharsani.r@ignitho.com".passed
+]]></system-out>
+</testcase>
+</testsuite>
