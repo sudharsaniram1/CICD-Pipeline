@@ -36,7 +36,7 @@ public static WebDriver driver;
 		}
 	}
 	static {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\SudharsaniRa_ht853wy\\Documents\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\SudharsaniRa_ht853wy\\Documents\\chromedriver_win32_updated\\chromedriver.exe");
 	      driver = new ChromeDriver();
 	      driver.get(prop.getProperty("url"));
 		driver.manage().window().maximize();
