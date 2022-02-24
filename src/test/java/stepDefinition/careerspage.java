@@ -21,9 +21,6 @@ public class careerspage extends Base_Class
 @When("user clicks careers page")
 public void user_clicks_careers_page() {
    driver.findElement(By.linkText("Careers")).click();   
-    //wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[text()='Accept']")));
-   // driver.findElement(By.xpath("//button[text()='Accept']")).click();
-	    // js.executeScript("arguments[0].scrollIntoView(true);",driver.findElement(By.xpath("(//h5[text()='Open Positions'])[2]")));
    	js.executeScript("window.scrollBy(0,500)", "");
    }
 
@@ -43,12 +40,6 @@ public void user_select_the_location_as(String Location) throws InterruptedExcep
 	driver.findElement(By.className("location-drop-down")).click();
 	Thread.sleep(2000);
 	driver.findElement(By.xpath("//li[@data-select_prob='8']")).click();
-	
-	//driver.findElement(By.xpath("(//ul[@id='list_location']//li)[2]")).click();
-	//driver.findElement(By.xpath("//li[text()='India']")).click();
-	//driver.findElement(By.xpath("//li[text()='"+Location+"']")).click();
-	//driver.findElement(By.xpath("(//*[contains(text(),'"+Location+"')])[3]")).click();
-		// js.executeScript("arguments[0].scrollIntoView(true);",driver.findElement(By.xpath("(//span[text()='Read More'])[1]")));
 	js.executeScript("window.scrollBy(0,500)", "");
 	}
 

@@ -1,4 +1,5 @@
 package testRunner;
+import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.runner.RunWith;
 import com.qa.sampleproject.base.Base_Class;
@@ -13,7 +14,7 @@ import io.cucumber.junit.CucumberOptions;
 		features = {"src/test/java/Features/"},
 		glue={"stepDefinition"},
 		monochrome = true,
-		tags = {"@careerpage"},
+		tags = {"@sanity"},
 		dryRun = false,
 		strict = true
 		)

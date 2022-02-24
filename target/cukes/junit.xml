@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="65.355392">
-<testcase classname="Ignitho Portal" name="location" time="65.355392">
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="59.693275">
+<testcase classname="Ignitho Portal" name="location" time="53.869363">
 <system-out><![CDATA[Given user launches the ignitho URL.........................................passed
 Then the user validates the home page.......................................passed
 When user clicks careers page...............................................passed
@@ -9,6 +9,26 @@ And user clicks open positions..............................................pass
 And user select the location as "India".....................................passed
 And user clicks on apply button.............................................passed
 And user enter the details as  "Niranjana","9600011122","7" and "niranj@gmail.com".passed
+]]></system-out>
+</testcase>
+<testcase classname="Ignitho Portal" name="login with valid credentials" time="0.186367">
+<failure message="org.junit.ComparisonFailure: expected:&lt;[Data led, Cloud enabled, Digital Engineering Solutions | Ignitho Inc.]&gt; but was:&lt;[Ignitho Technologies]&gt;&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:115)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:144)&#13;&#10;&#9;at stepDefinition.IgnithoPage.the_user_validates_the_home_page(IgnithoPage.java:23)&#13;&#10;&#9;at ✽.the user validates the home page(file:src/test/java/Features/sample.feature:7)&#13;&#10;"><![CDATA[Given user launches the ignitho URL.........................................passed
+Then the user validates the home page.......................................failed
+When user clicks inquiry button.............................................skipped
+Then the user validates the inquiry page....................................skipped
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<[Data led, Cloud enabled, Digital Engineering Solutions | Ignitho Inc.]> but was:<[Ignitho Technologies]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at stepDefinition.IgnithoPage.the_user_validates_the_home_page(IgnithoPage.java:23)
+	at ✽.the user validates the home page(file:src/test/java/Features/sample.feature:7)
+]]></failure>
+</testcase>
+<testcase classname="Ignitho Portal" name="login with valid credentials 2" time="5.637545">
+<system-out><![CDATA[When user clicks inquiry button.............................................passed
+Then the user validates the inquiry page....................................passed
+And user enter "Testing","Sudharsani","ignitho" and "sudharsani.r@ignitho.com".passed
 ]]></system-out>
 </testcase>
 </testsuite>
