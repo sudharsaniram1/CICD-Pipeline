@@ -58,7 +58,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Feb 19, 2022 01:38:23 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Feb 24, 2022 11:34:53 AM</span>
 			</a>
 		</ul>
 	</div>
@@ -86,7 +86,7 @@
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
 					<li><a href='#'>@sanity</a></li>
-					<li><a href='#'>@login</a></li>
+					<li><a href='#'>@careerpage</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -157,7 +157,7 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>5</span> step(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>8</span> step(s) passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
@@ -183,7 +183,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Ignitho Portal</span>
-						<span class='test-time'>Feb 19, 2022 01:38:24 PM</span>
+						<span class='test-time'>Feb 24, 2022 11:34:53 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -195,16 +195,16 @@
 </div>
 <div class='scenario outline node' test-id='2' status='pass'>
 	<div class='category-list'>
-		<span class='category label'>@login</span>
+		<span class='category label'>@careerpage</span>
 	</div>
-	<span class='duration right label'>0h 2m 37s+520ms</span>
+	<span class='duration right label'>0h 1m 5s+254ms</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: login with valid credentials</div>
-		<table class='runtime-table table-striped table'><tr><td>Requirement</td><td>Name</td><td>Company</td><td>Emailid</td></tr><tr><td>Testing</td><td>Sudharsani</td><td>ignitho</td><td>sudharsani.r@ignitho.com</td></tr></table>
+		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: location</div>
+		<table class='runtime-table table-striped table'><tr><td>Location</td><td>FullName</td><td>PhoneNo</td><td>YrExp</td><td>Email</td></tr><tr><td>India</td><td>Niranjana</td><td>9600011122</td><td>7</td><td>niranj@gmail.com</td></tr></table>
 	</div>
 	<ul class='steps'>
 		<li test-id='3' class='node scenario pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>login with valid credentials</div>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>location</div>
 			<ul class='gc steps'>
 				<li test-id='4' class='gc given pass' status='pass'>
 					<h6 class="step-name" title="IgnithoPage.user_launches_the_ignitho_URL()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given user launches the ignitho URL</h6>
@@ -215,15 +215,27 @@
 					<div class="node-step"></div>
 				</li>
 				<li test-id='6' class='gc when pass' status='pass'>
-					<h6 class="step-name" title="IgnithoPage.user_clicks_inquiry_button()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When user clicks inquiry button</h6>
+					<h6 class="step-name" title="careerspage.user_clicks_careers_page()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When user clicks careers page</h6>
 					<div class="node-step"></div>
 				</li>
 				<li test-id='7' class='gc then pass' status='pass'>
-					<h6 class="step-name" title="IgnithoPage.the_user_validates_the_inquiry_page()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then the user validates the inquiry page</h6>
+					<h6 class="step-name" title="careerspage.the_user_validates_the_careers_page()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then the user validates the careers page</h6>
 					<div class="node-step"></div>
 				</li>
 				<li test-id='8' class='gc and pass' status='pass'>
-					<h6 class="step-name" title="IgnithoPage.user_enter_and(String,String,String,String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And user enter "Testing","Sudharsani","ignitho" and "sudharsani.r@ignitho.com"</h6>
+					<h6 class="step-name" title="careerspage.user_clicks_open_positions()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And user clicks open positions</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='9' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="careerspage.user_select_the_location_as(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And user select the location as "India"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='10' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="careerspage.user_clicks_on_apply_button()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And user clicks on apply button</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='11' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="careerspage.user_enter_the_details_as(String,String,String,String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And user enter the details as  "Niranjana","9600011122","7" and "niranj@gmail.com"</h6>
 					<div class="node-step"></div>
 				</li>
 			</ul>
@@ -294,13 +306,13 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Feb 19, 2022 01:38:24 PM</td>
+										<td>Feb 24, 2022 11:34:53 AM</td>
 										<td class='linked' test-id='1'>Ignitho Portal</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Feb 19, 2022 01:38:24 PM</td>
-										<td class='linked' test-id='3'>login with valid credentials</td>
+										<td>Feb 24, 2022 11:34:53 AM</td>
+										<td class='linked' test-id='3'>location</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -310,7 +322,7 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@login</span>
+						<span class='category-name'>@careerpage</span>
 						<span class='category-status right'>
 						<span class='label pass'>2</span>
 						</span>
@@ -332,13 +344,13 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Feb 19, 2022 01:38:24 PM</td>
-										<td class='linked' test-id='2'>login with valid credentials</td>
+										<td>Feb 24, 2022 11:34:53 AM</td>
+										<td class='linked' test-id='2'>location</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Feb 19, 2022 01:38:24 PM</td>
-										<td class='linked' test-id='3'>login with valid credentials</td>
+										<td>Feb 24, 2022 11:34:53 AM</td>
+										<td class='linked' test-id='3'>location</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -375,25 +387,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>5</div>
+					<div class='panel-lead'>8</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Feb 19, 2022 01:38:23 PM</div>
+					<div class='panel-lead'>Feb 24, 2022 11:34:53 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Feb 19, 2022 01:41:01 PM</div>
+			 		<div class='panel-lead'>Feb 24, 2022 11:35:59 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 2m 37s+855ms</div>
+					<div class='panel-lead'>0h 1m 5s+959ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -418,7 +430,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td>@login</td>
+							<td>@careerpage</td>
 							<td>2</td>
 							<td>0</td>
 							<td>0</td>
@@ -455,8 +467,8 @@
 				infoChild: 0,
 				debugChild: 0,
 				exceptionsChild: 0,
-				grandChildCount: 5,
-				passGrandChild: 5,
+				grandChildCount: 8,
+				passGrandChild: 8,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
@@ -469,7 +481,7 @@
 		</script>
 		<script>
 			var timeline = {
-			        "Ignitho Portal":157.52
+			        "Ignitho Portal":65.254
 			};
 		</script>
 	

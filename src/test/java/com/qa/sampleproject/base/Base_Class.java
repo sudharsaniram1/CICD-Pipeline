@@ -21,13 +21,11 @@ public static WebDriver driver;
 	public static String browserName="";
 	public static String browserVersion="";
 	public static String os="";
-	
-	
-	
-	static{
+		
+		static{
 		try {
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream("C:\\Users\\SudharsaniRa_ht853wy\\Documents\\New Workspace\\sampleproject\\src\\test\\java\\com\\qa\\sampleproject\\config\\config.properties");
+			FileInputStream ip = new FileInputStream("C:\\Users\\SudharsaniRa_ht853wy\\Documents\\QA_Proposals\\sampleproject\\sampleproject\\src\\test\\java\\com\\qa\\sampleproject\\config\\Config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -42,8 +40,6 @@ public static WebDriver driver;
 		driver.manage().window().maximize();
 		
 	}
-	
-	
 	
 	public static boolean visibilityWait(WebElement element) 
 	{

@@ -13,7 +13,7 @@ import io.cucumber.junit.CucumberOptions;
 		features = {"src/test/java/Features/"},
 		glue={"stepDefinition"},
 		monochrome = true,
-		tags = {"@login"},
+		tags = {"@careerpage"},
 		dryRun = false,
 		strict = true
 		)
@@ -31,8 +31,6 @@ public class TestRunner extends Base_Class {
     	System.setProperty("screenshot.dir", "test-output/");
     	System.setProperty("screenshot.rel.path", "../");    	
     		}
-
-
 
 	@AfterClass
 	public static void closediver() {

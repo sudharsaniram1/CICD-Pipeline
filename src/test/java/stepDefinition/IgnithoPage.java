@@ -26,6 +26,7 @@ public class IgnithoPage extends Base_Class {
 	@When("user clicks inquiry button")
 	public void user_clicks_inquiry_button() {
 		driver.findElement(By.className("header-cta")).click();
+		
 	}
 
 	@Then("the user validates the inquiry page")
